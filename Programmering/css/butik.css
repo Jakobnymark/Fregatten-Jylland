@@ -1,0 +1,572 @@
+body {
+    margin: 0;
+}
+
+.reb_bagg {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: #232323;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "open sans";
+}
+
+a:hover {
+    color: #B28E18;
+}
+
+.header {
+    width: 100%;
+    z-index: 3;
+    position: fixed;
+    background-color: white;
+}
+
+.header_desktop {
+    display: none;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: scroll;
+}
+
+.header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+}
+
+.header .logo {
+    display: block;
+    float: left;
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    text-decoration: none;
+    width: 18%;
+}
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+.header .menu_icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 38px 34px;
+    position: relative;
+}
+
+.label {
+    cursor: pointer;
+    display: inline;
+    float: right;
+    padding: 30px 10px;
+    position: relative;
+    color: #6c6464;
+}
+
+.header .menu_icon .burger {
+    background: #6c6464;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+
+.header .menu_icon .burger:before,
+.header .menu_icon .burger:after {
+    background: #6c6464;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.header .menu_icon .burger:before {
+    top: 5px;
+}
+
+.header .menu_icon .burger:after {
+    top: -5px;
+}
+
+/* menu btn */
+.header .menu_btn {
+    display: none;
+}
+
+.header .menu_btn:checked ~ .menu {
+    max-height: 450px;
+}
+
+/* Banner billede */
+
+.img {
+    width: 100%;
+    padding-top: 80px;
+    animation-name: bounceIn;
+    animation: bounceIn 2s;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* Produkter side */
+.main {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.rows {
+    margin: 8px;
+    box-sizing: border-box;
+}
+
+.rows,
+.rows > .column {
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.rows:after {
+    content: "";
+    display: table;
+    clear: both;
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.content {
+    display: block;
+    margin: 30px;
+    box-sizing: border-box;
+}
+
+.produktbeskrivelse {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #3c3c3c;
+    text-align: center;
+}
+
+.product-name {
+    background-image: linear-gradient(to bottom right, rgba(37, 155, 208, 0.14), rgba(217, 212, 198, 0.27));
+    font-family: 'Open Sans', sans-serif;
+    color: #3c3c3c;
+    padding: 10px 10px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    margin: 1px;
+    border-radius: 50px;
+    box-sizing: border-box;
+
+}
+
+.product-name:hover {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.headlines h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: #58595a;
+    background-image: linear-gradient(to bottom right, rgba(37, 155, 208, 0.14), rgba(217, 212, 198, 0.27));
+    display: block;
+    padding: 8px;
+    margin-left: 0%;
+    margin-right: 0%;
+    box-sizing: border-box;
+}
+
+.beskrivelse {
+    text-align: center;
+    margin: 30px auto;
+    margin-left: 4px;
+    margin-right: 4px;
+    font-size: 18px;
+    color: #85878c;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    display: block;
+    box-sizing: border-box;
+}
+
+.ombutikken {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    background-image: linear-gradient(to bottom right, rgba(37, 155, 208, 0.14), rgba(217, 212, 198, 0.27));
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 2%;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.voresbutik {
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    color: #58595a;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    margin-top: -30px;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.videoi {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* FOOTER */
+
+.footer {
+    margin-top: 5%;
+    background-color: #f5f4f1;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "kontakt"
+        "so_me";
+}
+
+.kontakt {
+    grid-area: kontakt;
+    color: #797979;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.so_me {
+    margin-top: 8%;
+    grid-area: so_me;
+    text-align: center;
+    width: 100%;
+}
+
+.so_me_tekst a {
+    cursor: pointer;
+    font-size: 40px;
+    padding: 5px;
+    color: #797979;
+}
+
+.so_me_tekst a:hover {
+    color: #B28E18;
+}
+
+.lokation {
+    margin-left: 2px;
+}
+
+.mail {
+    color: #797979;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.footerhr {
+    border: 0;
+    background: url(reb.png);
+    height: 12px;
+    position: relative;
+    margin-bottom: -7%;
+}
+
+/* FOOTER SLUT*/
+
+
+/*Media Queries*/
+
+@media only screen and (min-width: 500px) {
+    .column {
+        width: 50%;
+    }
+
+    .content {
+        margin: 10px;
+    }
+
+    .img {
+        width: 100%;
+        position: relative;
+        padding-top: 76px;
+        display: block;
+        background-color: white;
+    }
+}
+
+
+@media only screen and (min-width: 800px) {
+
+    .column {
+        width: 20%;
+        position: relative;
+    }
+
+    .text {
+        font-size: 20px;
+        padding: 10px 0px;
+        margin: 0px;
+    }
+
+    .content {
+        margin: 0;
+    }
+
+    .headlines h1 {
+        margin-left: 17.5%;
+        margin-right: 17.5%;
+    }
+
+    .img {
+        width: 100%;
+        position: relative;
+        padding-top: 76px;
+        display: block;
+        background-color: white;
+    }
+
+    .ombutikken {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+    .main {
+        max-width: 1150px;
+        margin: auto;
+        padding: 20px;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    
+    .reb_bagg {
+        left: 4%;
+        display: unset;
+        position: fixed;
+        z-index: 6;
+        width: 30px;
+        overflow: hidden;
+    }
+
+    .menu_desktop {
+        padding-top: 3.5%;
+        padding-right: 8.2%;
+        float: right;
+    }
+
+    .menu_desktop a {
+        padding-right: 20px;
+    }
+
+    .header li a {
+        display: inline;
+        text-decoration: none;
+    }
+
+    .header .menu_icon {
+        cursor: pointer;
+        display: inline;
+        float: right;
+        padding: 38px 34px;
+        position: relative;
+        display: none;
+    }
+    
+    .label {
+        color: #c73f3f;
+        display: none!important;
+    }
+    
+    .fa-shopping-cart {
+        color: #6c6464;
+    }
+
+    .header .menu_icon .burger {
+        background: #6c6464;
+        height: 2px;
+        position: relative;
+        width: 18px;
+        display: none;
+    }
+
+    .header .menu_icon .burger:before,
+    .header .menu_icon .burger:after {
+        background: #6c6464;
+        content: '';
+        display: none;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+
+    .header .menu_icon .burger:before {
+        top: 5px;
+        display: none;
+    }
+
+    .header .menu_icon .burger:after {
+        top: -5px;
+        display: none;
+    }
+
+    /* menu btn */
+    .header .menu_btn {
+        display: none;
+    }
+
+    .header .menu_btn:checked ~ .menu {
+        max-height: 250px;
+        display: none;
+    }
+
+    .header_desktop {
+        width: 100%;
+        display: inline;
+        z-index: 4;
+        position: fixed;
+    }
+
+    .header .logo {
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-decoration: none;
+        width: 9%;
+        padding-left: 10%;
+    }
+
+    .beskrivelse {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .headlines h1 {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .img {
+        width: 80%;
+        padding-top: 9vw;
+        animation-name: bounceIn;
+        animation: bounceIn 2s;
+        overflow: hidden;
+        position: relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ombutikken {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: -7.7vw;
+    }
+
+    .embed-container {
+        position: relative;
+        overflow: hidden;
+        max-width: 80%;
+        margin: auto;
+    }
+
+    /* FOOTER*/
+
+    .footer {
+        width: 95%;
+        padding-left: 5%;
+        padding-bottom: 5%;
+        text-align: left;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "kontakt so_me"
+    }
+
+    .kontakt {
+        grid-area: kontakt;
+        color: #797979;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.5vw;
+        margin-left: 10%;
+        text-align: left;
+    }
+
+    .so_me {
+        margin-top: 3.1vw;
+        grid-area: so_me;
+        text-align: center;
+        width: 100%;
+    }
+
+    .so_me_tekst a {
+        cursor: pointer;
+        font-size: 4vw;
+        padding: 0.6vw;
+        color: #797979;
+    }
+
+    .mail {
+        color: #797979;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.5vw;
+    }
+
+    hr {
+        display: none;
+    }
+
+}

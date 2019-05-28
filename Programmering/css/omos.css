@@ -1,0 +1,809 @@
+body {
+    margin: 0;
+}
+
+.reb_bagg {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: #232323;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "open sans";
+}
+
+a:hover {
+    color: #B28E18;
+}
+
+.header {
+    width: 100%;
+    z-index: 3;
+    position: fixed;
+    background-color: white;
+}
+
+.header_desktop {
+    display: none;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: scroll;
+}
+
+.header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+}
+
+.header .logo {
+    display: block;
+    float: left;
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    text-decoration: none;
+    width: 18%;
+}
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+.header .menu_icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 38px 34px;
+    position: relative;
+}
+
+.label {
+    cursor: pointer;
+    display: inline;
+    float: right;
+    padding: 30px 10px;
+    position: relative;
+    color: #6c6464;
+}
+
+.header .menu_icon .burger {
+    background: #6c6464;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+
+.header .menu_icon .burger:before,
+.header .menu_icon .burger:after {
+    background: #6c6464;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.header .menu_icon .burger:before {
+    top: 5px;
+}
+
+.header .menu_icon .burger:after {
+    top: -5px;
+}
+
+/* menu btn */
+.header .menu_btn {
+    display: none;
+}
+
+
+.header .menu_btn:checked ~ .menu {
+    max-height: 450px;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.omosbanner {
+    width: 100%;
+    position: relative;
+    padding-top: 76px;
+    display: block;
+    background-color: white;
+}
+
+hr {
+    border: 0;
+    background: url(reb.png);
+    height: 12px;
+    position: relative;
+    margin-top: -1vw;
+}
+
+.information {
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.info {
+    text-align: center;
+    font-family: cursive;
+    font-size: 30px;
+    text-decoration: none;
+    position: relative;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.popup {
+    cursor: pointer;
+}
+
+.popup1 {
+    cursor: pointer;
+}
+
+.popup2 {
+    cursor: pointer;
+}
+
+.popup3 {
+    cursor: pointer;
+}
+
+.hover_popup {
+    background: rgba(162, 162, 162, 0.4);
+    cursor: pointer;
+    display: none;
+    height: 100%;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+.hover_popup .xhelper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.hover_popup > div {
+    display: inline-block;
+    height: auto;
+    vertical-align: middle;
+    width: 60%;
+    position: relative;
+}
+
+.popupluk {
+    background-color: #fff;
+    border: 3px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 40px;
+    height: 40px;
+    font-family: "Open Sans"
+}
+
+.hover_popup1 {
+    background: rgba(162, 162, 162, 0.4);
+    cursor: pointer;
+    display: none;
+    height: 100%;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+.hover_popup1 .xhelper1 {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.hover_popup1 > div {
+    display: inline-block;
+    height: auto;
+    vertical-align: middle;
+    width: 60%;
+    position: relative;
+}
+
+.popupluk1 {
+    background-color: #fff;
+    border: 3px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 40px;
+    height: 40px;
+    font-family: "Open Sans"
+}
+
+
+.hover_popup2 {
+    background: rgba(162, 162, 162, 0.4);
+    cursor: pointer;
+    display: none;
+    height: 100%;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+.hover_popup2 .xhelper2 {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.hover_popup2 > div {
+    display: inline-block;
+    height: auto;
+    vertical-align: middle;
+    width: 60%;
+    position: relative;
+}
+
+.popupluk2 {
+    background-color: #fff;
+    border: 3px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 40px;
+    height: 40px;
+    font-family: "Open Sans"
+}
+
+.hover_popup3 {
+    background: rgba(162, 162, 162, 0.4);
+    cursor: pointer;
+    display: none;
+    height: 100%;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+.hover_popup3 .xhelper3 {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.hover_popup3 > div {
+    display: inline-block;
+    height: auto;
+    vertical-align: middle;
+    width: 60%;
+    position: relative;
+}
+
+.popupluk3 {
+    background-color: #fff;
+    border: 3px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 40px;
+    height: 40px;
+    font-family: "Open Sans"
+}
+
+.imgdesktop {
+    display: none;
+}
+
+.imgpris {
+    margin-bottom: 50px;
+}
+
+.pris {
+    position: absolute;
+    bottom: 80px;
+    right: 60px;
+}
+
+.aabningstid {
+    position: absolute;
+    top: 20px;
+    left: 35px;
+}
+
+.kontaktinfo {
+    position: absolute;
+    bottom: 30px;
+    right: 90px;
+}
+
+.parkering {
+    position: absolute;
+    bottom: 8px;
+    left: 60px;
+}
+
+.footer {
+    margin-top: 5%;
+    background-color: #f5f4f1;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "kontakt"
+        "so_me";
+}
+
+.kontakt {
+    grid-area: kontakt;
+    color: #797979;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.so_me {
+    margin-top: 8%;
+    grid-area: so_me;
+    text-align: center;
+    width: 100%;
+}
+
+.so_me_tekst a {
+    cursor: pointer;
+    font-size: 40px;
+    padding: 5px;
+    color: #797979;
+}
+
+.so_me_tekst a:hover {
+    color: #B28E18;
+}
+
+.lokation {
+    margin-left: 2px;
+}
+
+.mail {
+    color: #797979;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.footerhr {
+    border: 0;
+    background: url(reb.png);
+    height: 12px;
+    position: relative;
+    margin-bottom: -7%;
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+    .main {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .reb_bagg {
+        left: 4%;
+        display: unset;
+        position: fixed;
+        z-index: 6;
+        width: 30px;
+        overflow: hidden;
+    }
+
+    .menu_desktop {
+        padding-top: 3.5%;
+        padding-right: 8.2%;
+        float: right;
+    }
+
+    .menu_desktop a {
+        padding-right: 20px;
+    }
+
+    .header li a {
+        display: inline;
+        text-decoration: none;
+    }
+
+    .header .menu_icon {
+        cursor: pointer;
+        display: inline;
+        float: right;
+        padding: 38px 34px;
+        position: relative;
+        display: none;
+    }
+    
+    .label {
+        color: #c73f3f;
+        display: none!important;
+    }
+    
+    .fa-shopping-cart {
+        color: #6c6464;
+    }
+
+    .header .menu_icon .burger {
+        background: #6c6464;
+        height: 2px;
+        position: relative;
+        width: 18px;
+        display: none;
+    }
+
+    .header .menu_icon .burger:before,
+    .header .menu_icon .burger:after {
+        background: #6c6464;
+        content: '';
+        display: none;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+
+    }
+
+    .header .menu_icon .burger:before {
+        top: 5px;
+        display: none;
+    }
+
+    .header .menu_icon .burger:after {
+        top: -5px;
+        display: none;
+    }
+
+    /* menu btn */
+    .header .menu_btn {
+        display: none;
+    }
+
+
+    .header .menu_btn:checked ~ .menu {
+        max-height: 250px;
+        display: none;
+    }
+
+    .header_desktop {
+        width: 100%;
+        display: inline;
+        z-index: 4;
+        position: fixed;
+    }
+
+    .header .logo {
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-decoration: none;
+        width: 9%;
+        padding-left: 10%;
+    }
+
+    .imgdesktop {
+        display: block;
+        text-align: center;
+        position: relative;
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+
+    .info {
+        display: none;
+    }
+
+
+    /* GRIDS */
+    .box {
+        position: relative;
+        background-color: white;
+    }
+
+    /* PRISER */
+
+    .prisbox {
+        position: absolute;
+        background-color: #ffffff;
+        bottom: 28px;
+        padding-left: 40px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        margin: 0;
+        margin-left: 45%;
+        font-size: 15px;
+        font-family: 'Open Sans';
+    }
+
+    .prisboxto {
+        display: grid;
+        text-align: left;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "a ."
+            "b d"
+            "c e"
+    }
+
+    .priser {
+        grid-area: a;
+        font-size: 20px;
+    }
+
+    .a {
+        grid-area: b;
+        margin-right: 40px;
+    }
+
+    .b {
+        grid-area: c;
+
+    }
+
+    .c {
+        grid-area: d;
+    }
+
+    .d {
+        grid-area: e;
+    }
+
+    /* ÅBNINGSTIDER */
+
+    .aabningstidbox {
+        position: absolute;
+        background-color: #ffffff;
+        bottom: 26px;
+        padding-left: 40px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        margin-left: 18%;
+        font-size: 15px;
+        font-family: 'Open Sans';
+    }
+
+    .aabningstidboxto {
+        display: grid;
+        line-height: 2px;
+        text-align: left;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "et ."
+            "a1 e1"
+            "b1 f1"
+            "c1 ."
+            "d1 ."
+    }
+
+    .aabningstider {
+        grid-area: et;
+        font-size: 20px;
+    }
+
+    .a1 {
+        grid-area: a1;
+        margin-right: 50px;
+    }
+
+    .b1 {
+        grid-area: b1;
+
+    }
+
+    .c1 {
+        grid-area: c1;
+    }
+
+    .d1 {
+        grid-area: d1;
+    }
+
+    .e1 {
+        grid-area: e1;
+    }
+
+    .f1 {
+        grid-area: f1;
+    }
+
+
+    /* KONTAKT */
+
+    .kontaktbox {
+        position: absolute;
+        background-color: #ffffff;
+        bottom: 20px;
+        padding-left: 20px;
+        padding-bottom: 2px;
+        margin: 0;
+        margin-left: 48%;
+        font-size: 15px;
+        font-family: 'Open Sans';
+    }
+
+    .kontaktboxto {
+        display: grid;
+        line-height: 2px;
+        text-align: left;
+        margin-right: -40px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "k0 ."
+            "k1 k5"
+            "k2 k6"
+            ". k7"
+            "k3 ."
+            "k4 ."
+    }
+
+    .kontakter {
+        grid-area: k0;
+        font-size: 20px;
+    }
+
+    .k1 {
+        grid-area: k1;
+        margin-right: 150px;
+        text-decoration: underline;
+    }
+
+    .k2 {
+        grid-area: k2;
+    }
+
+    .k3 {
+        grid-area: k3;
+        text-decoration: underline;
+    }
+
+    .k4 {
+        grid-area: k4;
+    }
+
+    .k5 {
+        grid-area: k5;
+        text-decoration: underline;
+    }
+
+    .k6 {
+        grid-area: k6;
+    }
+
+    .k7 {
+        grid-area: k7;
+    }
+
+    /* PARKERING */
+
+    .parkeringbox {
+        position: absolute;
+        background-color: #ffffff;
+        bottom: 8px;
+        padding-left: 20px;
+        margin-left: 15%;
+        font-size: 15px;
+        font-family: 'Open Sans';
+    }
+
+    .parkeringboxto {
+        display: grid;
+        line-height: 1px;
+        text-align: left;
+        margin-right: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "p0 p3"
+            "p1 p3"
+            "p2 p3"
+            ". p3"
+    }
+
+    .parkeringsplads {
+        grid-area: p0;
+        font-size: 20px;
+    }
+
+    .p1 {
+        grid-area: p1;
+        margin-right: 50px;
+        padding-top: 20px;
+    }
+
+    .p2 {
+        grid-area: p2;
+    }
+
+    .p3 {
+        grid-area: p3;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        margin-left: -45px;
+    }
+
+    /* FOOTER */
+    .footer {
+        width: 95%;
+        padding-left: 5%;
+        padding-bottom: 5%;
+        text-align: left;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "kontakt so_me"
+    }
+
+    .kontakt {
+        grid-area: kontakt;
+        color: #797979;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.5vw;
+        margin-left: 10%;
+        text-align: left;
+    }
+
+    .so_me {
+        margin-top: 3.1vw;
+        grid-area: so_me;
+        text-align: center;
+        width: 100%;
+    }
+
+    .so_me_tekst a {
+        cursor: pointer;
+        font-size: 4vw;
+        padding: 0.6vw;
+        color: #797979;
+    }
+
+    .mail {
+        color: #797979;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.5vw;
+    }
+
+    hr {
+        display: none;
+    }
+
+}
